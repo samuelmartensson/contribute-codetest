@@ -51,7 +51,7 @@ function App() {
 
       <h1 className="text-2xl font-bold">Get this done</h1>
       <div className="grid gap-3 max-h-[60vh] overflow-auto">
-        {Object.values(list)
+        {list
           .sort((a, b) => b.createdAt - a.createdAt)
           .map((item) => (
             <TodoItem
